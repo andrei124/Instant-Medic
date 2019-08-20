@@ -1,6 +1,8 @@
 # Instant-Medic
 Medical application for determining a list of possible affections based on the symptoms introduced by the user
 
+Built with HMTL, CSS, JavaScript
+
 References
 1. All the medical information taken from www.wikipedia.org
 
