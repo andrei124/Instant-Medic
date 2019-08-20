@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+
+
+<title>Instant-medic</title>
+
+<style>
+			body{
+			   background-image:url("bg2.png");
+			}
+            #banner {
+                position: auto;
+                top: auto;
+                left: auto;
+                right: auto;
+                max-width: 100%;
+                max-height: 100%;
+                z-index: -1;
+            }
+			
+			#header {
+            background-color:black;
+            color:white;
+            text-align:center;
+            padding:1px;
+	        height:80px;
+            display="inline";
+			max-width:1200px;
+			border-radius:25px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
+            }
+			#headertext{
+			animation: fullrotate 8s infinite;
+			}
+			@keyframes fullrotate{
+			0%,50%{transform:rotateY(0deg);}
+			100%{transform:rotateY(360deg);}
+			}
+		
+			#content{
+            background-image:url("bg1.png");
+            color:white;
+            text-align:center;
+            padding:1px;
+	        height:600px;
+            display="inline";
+			max-width:1200px;	   
+			border-radius:25px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			font-family:Trebuchet MS;
+			font-size:50;
+			
+			
+			}
+			/*#content:hover{
+			animation-name:vibrate;
+			animation-duration:0.3s;
+			}*/
+		    #header:hover{
+			animation-name:vibrate;
+			animation-duration:0.3s;
+			}
+			#footer:hover{
+			animation-name:vibrate;
+			animation-duration:0.3s;
+			}
+			
+			  @keyframes vibrate{
+			  0%{transform:rotate(0deg);}	
+			  10%{transform:rotate(-0.4deg);}
+			  20%{transform:rotate(0.4deg);}
+			  30%{transform:rotate(-0.4deg);}
+			  40%{transform:rotate(0.4deg);}
+			  50%{transform:rotate(-0.4deg);}
+			  60%{transform:rotate(0.4deg);}
+			  70%{transform:rotate(-0.4deg);}
+			  80%{transform:rotate(0.4deg);}
+			  90%{transform:rotate(-0.4deg);}		
+              100%{transform:rotate(0deg);}				  
+			}
+      
+            #footer {
+            background-color:black;
+            color:white;
+            text-align:center;
+            padding:1px;
+	        max-height:44px;
+            display="inline";
+			max-width:1200px;
+			border-radius:25px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            #navMenu ul{
+            list-style-type:none;
+			margin:0;
+			padding:0;
+			}
+
+            #navMenu a {
+            display:block;
+		    width:60px;
+		    background-color:#dddddd;
+		    }
+		    ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:#4CAF50;
+			max-width:1200px;
+			border-radius:15px;
+			height:40px;
+			margin:5px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			li {
+            float: left;
+            }
+            li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 10px 19px;
+            text-decoration: none;
+            }
+            li a:hover{
+			color:black;
+			background-color:lightgreen;
+			animation-name:menucolor;
+			animation-duration:2s;
+            }
+			#mreport{
+			float:right;
+			}
+			@keyframes menucolor{
+              0%{background-color:chartreuse;}	
+			  1.5%{transform:rotate(-3deg);}
+			  3%{transform:rotate(3deg);}
+			  4.5%{transform:rotate(-3deg);}
+			  6%{transform:rotate(3deg);}
+			  7.5%{transform:rotate(-3deg);}
+			  9%{transform:rotate(3deg);}
+			  10.5%{transform:rotate(-3deg);}
+			  12%{transform:rotate(3deg);}
+			  15%{transform:rotate(0deg);}
+              33%{background-color:SpringGreen;}
+			  67%{background-color:greenyellow;}
+              100%{background-color:lightgreen;;}			  
+			}
+			
+			#archive-content-title{
+			text-align:left;
+			margin-left:30px;
+			margin-top:20px;
+			max-width:auto;
+			font-family:verdana;
+			color:black;
+			font-size:35px;
+			text-shadow:2px 2px 0 #bcbcbc, 4px 4px 0 #ffffff;
+			}
+			
+			
+			
+			#archive-content-text{
+			text-align:left;
+			color:white;
+			margin-left:25px;
+			margin-right:20px;
+			font-family:verdana;
+			font-size:30;
+			max-width:auto;
+			text-shadow:1px 1px black;
+			font-weight:bold;
+			}
+			
+			#archive-content-symptom-list{
+            text-align:left;
+			color:white;
+			margin-left:25px;
+			font-family:verdana;
+			font-size:30;
+			max-width:auto;
+			text-shadow:1px 1px #02131F;
+			font-weight:bold;		
+			}
+			
+			#archive-content-symptom-title{
+			text-align:left;
+			margin-left:30px;
+			margin-top:20px;
+			max-width:auto;
+			font-family:verdana;
+			color:black;
+			font-size:23px;
+			text-shadow:2px 2px 0 #bcbcbc, 4px 4px 0 #ffffff;
+			}
+			
+        </style>
+
+</head>
+
+
+<body>
+</div>
+<center>
+<div>
+<a href="template.html"><img id="banner"  src="banner.png" alt="Banner Image"/></a>
+<br>
+<div id="header">
+      <br>
+	  <div id="headertext">
+      <font face="Trebuchet MS" size="5" color="white"><b><i>Welcome to Instant-medic!</i></b></font>
+	  </div>
+</div>
+
+<br>
+
+<ul>
+  <li><a href="home.html"><font face="Verdana">HOME</font></a></li>
+  <li><a href="archive.html"><font face="Verdana">ARCHIVE</font></a></li>
+  <li><a href="contact.html"><font face="Verdana">CONTACT</font></a></li>
+  <div id="mreport"><li><a href="mreport.html"><font face="Verdana">APPLY FOR A MEDICAL REPORT</font></a></li></div>
+</ul>
+
+<div id="content">
+
+<div id="archive-content-title">Gastritis</div>
+<br><br>
+<div id="archive-content-text">Gastritis is inflammation of the lining of the stomach. It may occur as a short episode or may be of a long duration. Complications may include bleeding, stomach ulcers, and stomach tumors.When due to autoimmune problems, low red blood cells due to not enough vitamin B12 may occur, a condition known as pernicious anemia. Common causes include infection with Helicobacter pylori and use of NSAIDs. Less common causes include alcohol, smoking, cocaine, severe illness, autoimmune problems, radiation therapy, and Crohn disease among others.Endoscopy, a type of X-ray known as an upper gastrointestinal series, blood tests, and stool tests may help with diagnosis. Prevention is by avoiding things that cause the disease. Treatment includes medications such as antacids, H2 blockers, or proton pump inhibitors.During an acute attack drinking viscous lidocaine may help. If gastritis is due to NSAIDs these may be stopped. If H. pylori is present it may be treated with a combination of antibiotics such as amoxicillin and clarithromycin. For those with pernicious anemia, vitamin B12 supplements are recommended either by mouth or by injection. People are usually advised to avoid foods that bother them.</div>
+
+<br><br>
+
+<div id="archive-content-symptom-title">Symptoms</div>
+<br>
+<div id="archive-content-symptom-list">
+- Upper abdominal pain<br>
+- Nausea<br>
+- Vomiting<br>
+- Bloating<br>
+- Loss of appetite<br>
+- Heart burn<br>
+- Unexplained weight loss<br>
+</div>
+
+
+</div>
+
+<br>
+
+<div id="footer">
+      &copy Tudor Costin&Roman Andrei / <i><b>Infomatrix 2016</b></i>
+</div>
+</center>
+
+
+</body>
+
+
+
+</html>
