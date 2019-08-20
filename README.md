@@ -5,3 +5,4 @@ References
 1. All the medical information taken from www.wikipedia.org
 
 Co-author: Costin Tudor
+Project submitted to the National Phase of Infomatrix 2016 (Romania) project contest
